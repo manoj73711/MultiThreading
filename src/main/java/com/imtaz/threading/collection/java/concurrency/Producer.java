@@ -18,7 +18,7 @@ public class Producer implements Runnable {
 				synchronized (que) {
 					questionNumber=questionNumber+1;
 					System.out.println("Adding question to stack :"+questionNumber);
-					que.put(questionNumber++);
+					que.put(questionNumber);
 				}
 
 			} catch (InterruptedException e) {
